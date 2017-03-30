@@ -13,6 +13,7 @@
     "prerender-spa-plugin": "^2.0.1",
     "pug": "^2.0.0-beta11",
     "vue": "^2.2.1",
+    "vue-config": "^1.0.0",
     "vue-router": "^2.3.0",
     "vuex": "^2.2.1",
     "vuex-router-sync": "^4.1.2"
