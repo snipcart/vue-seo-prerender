@@ -6,8 +6,12 @@ import store from './store'
 
 sync(store, router)
 
-new Vue({
+const root = new Vue({
   store,
   router,
   render: h => h(App)
-}).$mount('#app')
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+  root.$mount('#app');
+})

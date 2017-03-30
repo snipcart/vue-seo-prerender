@@ -1,6 +1,6 @@
 <template lang="pug">
   div(class="product")
-    a(class="product" v-bind:href="url")
+    router-link(v-bind:to="url").product
       img(v-bind:src="product.image" v-bind:alt="product.name" class="thumbnail" height="200")
       p {{ product.name }}
     
