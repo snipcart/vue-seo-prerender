@@ -1,0 +1,41 @@
+<template lang="pug">
+  div(class="product")
+    a(class="product" v-bind:href="url")
+      img(v-bind:src="product.image" v-bind:alt="product.name" class="thumbnail" height="200")
+      p {{ product.name }}
+    
+    button(class="snipcart-add-item"
+      v-bind:data-item-name="product.name"
+      v-bind:data-item-id="product.id"
+      v-bind:data-item-image="product.image"
+      data-item-url="https://vue-snipcart.netlify.com/"
+      v-bind:data-item-price="product.price")
+        | Buy it for {{ product.price }}$
+ 
+</template>
+
+<script>
+export default {
+  name: 'Product',
+  props: ['product'],
+  computed: {
+    url(){
+      return `/products/${this.product.id}`
+    }
+  }
+}
+</script>
+
+<style>
+  .product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+  }
+
+  .product:hover{
+    background-color: #CFD8DC;
+  }
+</style>

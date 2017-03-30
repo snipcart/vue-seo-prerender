@@ -1,0 +1,32 @@
+{
+  "name": "vue-snipcart",
+  "description": "A Vue.js project",
+  "version": "1.0.0",
+  "author": "maximelaboissonniere <maximelaboissonniere@gmail.com>",
+  "private": true,
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "prerender-spa-plugin": "^2.0.1",
+    "pug": "^2.0.0-beta11",
+    "vue": "^2.2.1",
+    "vue-router": "^2.3.0",
+    "vuex": "^2.2.1",
+    "vuex-router-sync": "^4.1.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-latest": "^6.0.0",
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "vue-loader": "^11.1.4",
+    "vue-template-compiler": "^2.2.1",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.2.0"
+  }
+}
