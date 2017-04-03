@@ -1,7 +1,7 @@
 <template lang="pug">
   div
     div(class="topcontext")
-      span 
+      router-link(to="/").home__title
         | Vue.js Demo Store
     
       div(class="snipcart-summary")
@@ -48,6 +48,11 @@ export default {
     float: right;
     float: none;
     margin-left: 90%;
+  }
+  
+  .home__title{
+    text-decoration: none;
+    color: white;
   }
 
   .snipcart-checkout{
