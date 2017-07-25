@@ -5,7 +5,8 @@
   "author": "maximelaboissonniere <maximelaboissonniere@gmail.com>",
   "private": true,
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --inline"
   },
   "dependencies": {
     "babel-polyfill": "^6.23.0",
